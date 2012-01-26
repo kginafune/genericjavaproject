@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- file paths are assumed in the assets folder. -->
+    <!-- Attack speed is in miliseconds. -->
+    <!--
+    	Splash degradation is the amount of damage a splash attack loses over distance.
+    	This is expressed as -splashDamage * log( %distanceFromSplashOrigin )
+    -->
+    <Tower name="Template Tower"
+        range="120.0"
+        damage="5"
+        attackSpeed="250"
+        projectileSpeed="120"
+        splashRadius="0"
+        splashDegredation="false"
+        mana="0"
+        passable="false"
+        abilities="test_ability1|test_ability2"
+        icon="images/icon/temlpate_tower.png"
+        towerModel="meshes/tower/template_tower.msh"
+        towerTexture="textures/tower/template_tower.png"
+        projectileModel="meshes/projectile/ballista"
+        porjectileTexture="textures/tower/template_projectile.png"
+        />
+
+    
+</resources>
