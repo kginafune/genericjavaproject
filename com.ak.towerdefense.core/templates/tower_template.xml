@@ -20,7 +20,7 @@
         towerModel="meshes/tower/template_tower.msh"
         towerTexture="textures/tower/template_tower.png"
         projectileModel="meshes/projectile/ballista"
-        porjectileTexture="textures/tower/template_projectile.png"
+        projectileTexture="textures/tower/template_projectile.png"
         />
 
     

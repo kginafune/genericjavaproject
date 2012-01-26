@@ -1,5 +1,7 @@
 package com.ak.towerdefense.entity;
 
+import com.ak.towerdefense.map.MapPoint;
+
 /**
  * Entity is the absolute foundation of models that are
  * to be displayed on the screen. Things included in the
@@ -30,6 +32,17 @@ abstract public class Entity {
 	 * referencing.
 	 */
 	public final int ENTITY_ID;
+	/**
+	 * The location in the game grid that the Entity occupies.
+	 */
+	public MapPoint mMapLocation;
+	/**
+	 * The Entities absolute location in the "gl" world.
+	 * TODO Create class GLPoint. The purpose of the class should
+	 * be to define and auto handle gl touch point and distance
+	 * conversions.
+	 */
+	//public final GLPoint mGLLocation;
 	
 	/**
 	 * Creates a new Entity and assigns it a new id. 
