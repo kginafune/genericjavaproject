@@ -51,10 +51,10 @@ public class LauncherScreen extends BaseGameScreen {
 		});
 		mMesh.setIndices(new short[] { 0, 1, 2, 3, 0 });
 		
-		mCamera = new OrthographicCamera(width, height);
+		/*mCamera = new OrthographicCamera(width, height);
 		mCamera.position.set(width / 2, height / 2, 0);
 		
-		mViewPort = new Rectangle(0, 0, width, height);
+		mViewPort = new Rectangle(0, 0, width, height);*/
 	}
 	
 	@Override public void dispose() {
@@ -64,8 +64,8 @@ public class LauncherScreen extends BaseGameScreen {
 	@Override public void render(float delta) {
 		if (mStartTime == -1)
 			mStartTime = System.currentTimeMillis();
-		if (System.currentTimeMillis() - mStartTime > mDisplayTime)
-			close();
+		/*if (System.currentTimeMillis() - mStartTime > mDisplayTime)
+			close();*/
 		GL10 gl = Gdx.graphics.getGL10();
 		
 		gl.glClear(GL10.GL_COLOR_BUFFER_BIT);

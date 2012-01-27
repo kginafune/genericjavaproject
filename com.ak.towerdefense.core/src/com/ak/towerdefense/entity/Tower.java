@@ -1,5 +1,7 @@
 package com.ak.towerdefense.entity;
 
+import com.badlogic.gdx.graphics.g3d.loaders.md5.MD5Model;
+
 /**
  * The base class for all towers in the game. A tower is
  * the primary entity in the Tower Defense game. It (usually)
@@ -26,4 +28,11 @@ public class Tower extends Entity {
 	public static final String TAG = "Tower";
 	/* Our version number */
 	private static final long serialVersionUID = 1L;
+	
+	public Tower() {
+		MD5Model m = null;
+	}
+	
+	@Override void onDispose() {
+	}
 }
