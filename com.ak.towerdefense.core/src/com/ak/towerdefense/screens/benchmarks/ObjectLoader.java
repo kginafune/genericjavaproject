@@ -28,7 +28,8 @@ public class ObjectLoader implements ApplicationListener, InputProcessor {
 
 	
 	@Override public void create() {
-		torus = ModelLoaderOld.loadObj(Gdx.files.internal("assets/models/torus.obj").read());
+		torus = ModelLoaderOld.loadObj(Gdx.files.internal("assets/models/basictower.obj").read());
+		torus.scale(0.2f, 0.2f, 0.2f);
 		cat = new Texture(Gdx.files.internal("assets/images/cheshire-cat-icon.png"), true);
 		cat.setFilter(TextureFilter.MipMap, TextureFilter.Linear);
 		
@@ -65,11 +66,10 @@ public class ObjectLoader implements ApplicationListener, InputProcessor {
          gl.glLightfv(GL10.GL_LIGHT0, GL10.GL_DIFFUSE, lightColor, 0);
          gl.glLightfv(GL10.GL_LIGHT0, GL10.GL_POSITION, lightPosition, 0);
 
-         gl.glRotatef(viewAngle, 0, 0, 1);
+         gl.glRotatef(viewAngle, 0, 1, 0);
 
          cat.bind();
          torus.render(GL10.GL_TRIANGLES);
-         
 	}
 	@Override
 	public void resize(int width, int height) {
