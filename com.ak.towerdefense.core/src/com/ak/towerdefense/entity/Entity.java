@@ -38,11 +38,11 @@ abstract public class Entity {
 	public MapPoint mMapLocation;
 	/**
 	 * The Entities absolute location in the "gl" world.
-	 * TODO Create class GLPoint. The purpose of the class should
+	 * TODO Create class PointF. The purpose of the class should
 	 * be to define and auto handle gl touch point and distance
 	 * conversions.
 	 */
-	//public final GLPoint mGLLocation;
+	//public PointF mGLLocation;
 	
 	/**
 	 * Creates a new Entity and assigns it a new id. 
@@ -65,5 +65,5 @@ abstract public class Entity {
 	 * to an Entity sub-class. <em>ALL</em> textures should be
 	 * released.
 	 */
-	abstract void onDispose();
+	abstract protected void onDispose();
 }
